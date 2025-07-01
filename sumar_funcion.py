@@ -1,7 +1,12 @@
 def sumar(a,b):
     return a+b
 
-n1 = int(input("ingrese valor"))
-n2 = int(input("Ingrese Valor)"))
-
+while True:
+    try:
+        n1 = int(input("ingrese valor"))
+        n2 = int(input("Ingrese Valor"))
+        break
+    except:
+        print("ingrese valor entero")
+    
 print(sumar(n1,n2))
